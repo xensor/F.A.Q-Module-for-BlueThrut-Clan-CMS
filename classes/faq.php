@@ -80,7 +80,7 @@ class faq Extends Basic
       </section>";
     }
   }
-  public function show_faq()
+  public function show_faq($cID, $dID)
   {
 
     $query = $this->mysql->query('select * from faq_cat ORDER BY title ASC');
@@ -113,7 +113,7 @@ class faq Extends Basic
 
             <td class='main' align='center'>$rows[title]</td>
 
-            <td class='main' align='center'><a href='".MAIN_ROOT."/members/console.php?cID=229&rID=$rows[faq_id]'>Edit</a> <a href='".MAIN_ROOT."/members/console.php?cID=232&rID=$rows[faq_id]'>Delete</a></tr>";
+            <td class='main' align='center'><a href='".MAIN_ROOT."/members/console.php?cID=$cID&rID=$rows[faq_id]'>Edit</a> <a href='".MAIN_ROOT."/members/console.php?cID=$dID&rID=$rows[faq_id]'>Delete</a></tr>";
 
           }
 
