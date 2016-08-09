@@ -52,7 +52,7 @@ include_once("../../../../classes/faq.php");
 
 $faqs = new faq($mysqli);
 	
-	$faqs->faq_cat();
+	$faqs->faq_cat('244','242');
 
 
 
