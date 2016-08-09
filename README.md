@@ -15,5 +15,9 @@
     if you did this you should see the following: <code> category for the faq > faq options </code><br>
     <br>
 </p>
-<p> there is some modifications to the class file <code>faq.php</code> that needs to be done. <code>console.php?cID=number&rID=$rID</code> <code>cID=(to number of the console)</code></p>
+<p> you will have to edit out the numbers on these line of codes: <br/>
+<code>$faqs->faq_cat(edit,delete);</code> <br/>
+<code>$faqs->show_faq(edit,delete);</code><br/>
+
+just change the numbers to the number representing the console ids. first number is edit, 2nd line is for delete.</p>
 <p>P.S: Sorry I know this isn't a best written document. I barely release items out to the public. So I barely have to write documents for program or stuff i write.</p>
