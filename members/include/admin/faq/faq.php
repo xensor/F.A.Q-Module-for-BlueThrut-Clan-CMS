@@ -54,7 +54,7 @@ include_once("../../../../classes/faq.php");
 $faqs = new faq($mysqli);
 
 
-$faqs->show_faq();
+$faqs->show_faq('232','233');
 
 
 
